@@ -1,0 +1,5 @@
+name             'app'
+maintainer       'Mpp Inc.'
+maintainer_email 'admin@g.co'
+license          'WTFPL'
+description      'All application recipes live here'
