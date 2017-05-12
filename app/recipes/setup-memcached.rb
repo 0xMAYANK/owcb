@@ -4,8 +4,10 @@ package "memcached" do
   retry_delay 5
 end
 
-#
-# be aware that Amazon Linux uses a different configuration schema.
+service "memcached" do
+  action :nothing
+end
+
 case node[:platform]
 when 'centos','redhat','fedora','amazon'
   template '/etc/sysconfig/memcached' do
