@@ -16,7 +16,7 @@ when 'centos','redhat','fedora','amazon'
     variables(
       :user => node[:memcached][:user],
       :port => node[:memcached][:port],
-      :memory => node[:memcached][:memory]
+      :memory => node[:memcached][:memory],
       :maxconn => node[:memcached][:max_connections]
     )
     notifies :restart, "service[memcached]", :immediately
